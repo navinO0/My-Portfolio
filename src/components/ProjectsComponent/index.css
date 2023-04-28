@@ -1,0 +1,14 @@
+.projects-main-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: auto;
+  background-color: #333b6e;
+}
+
+.projects-sub-container {
+}
+.projects-ul-list-container {
+  padding-left: 5px;
+  list-style: none;
+}

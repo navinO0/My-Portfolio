@@ -1,0 +1,53 @@
+.about-main-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #333b6e;
+}
+.about-sub-container {
+  width: 80%;
+}
+.about-me-heading-container {
+  display: flex;
+  align-items: center;
+}
+.hr-line {
+  width: 100%;
+}
+.about-info-card-container {
+}
+.summery-content {
+}
+.tech-stack-display {
+  display: flex;
+}
+
+.ul-tech-stack {
+  list-style: circle;
+  padding-left: 7px;
+  padding: 10px;
+}
+.tech-stack-item {
+  display: flex;
+  align-items: center;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+.list-item {
+  margin-top: 8px;
+  margin-bottom: 0px;
+  margin-right: 9px;
+  color: #a7beae;
+}
+
+.section-heading {
+  color: #a7beae;
+  font-family: 'Roboto';
+  font-weight: 500;
+}
+.scrollContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
