@@ -1,22 +1,24 @@
 .header-main-container {
   background-color: #333b6e;
-  height: 10vh;
+  height: 14vh;
+  width: 100%;
+
+  padding-right: 100px;
 }
-.header-sub-container {
+.header-sub-container-lg {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  padding: 0px 40px 0px 40px;
+  justify-content: flex-end;
 }
-.header-left {
-  width: 700px;
+.header-sub-container-sm {
+  display: none;
 }
+
 .header-right {
   width: 400px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-right: 30px;
 }
 .header-links {
   color: #fcf6f5ff;
@@ -27,11 +29,43 @@
   margin-right: 20px;
 }
 
+@media screen and (max-width: 768px) {
+  .header-sub-container-lg {
+    display: none;
+  }
+  .header-main-container {
+    height: 60px;
+    width: 100%;
+  }
+  .header-sub-container-sm {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: 30px;
+  }
+  .header-right {
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .header-main-container {
+    padding-right: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+  .header-icons {
+    color: #ffffff;
+    margin-right: 10px;
+  }
+}
+
 .fadeInDown {
   -webkit-animation-name: fadeInDown;
   animation-name: fadeInDown;
-  -webkit-animation-duration: 3s;
-  animation-duration: 3s;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
 }
@@ -93,7 +127,7 @@
   position: relative;
   text-decoration: none;
   border-radius: 4px;
-  width: 100%;
+  width: 120px;
 }
 .btn:hover {
   text-decoration: none;

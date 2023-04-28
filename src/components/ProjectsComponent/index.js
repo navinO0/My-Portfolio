@@ -1,5 +1,6 @@
 import './index.css'
 import ProjectItem from '../ProjectsItem'
+// import MiniProjectItem from '../MiniProjectItem'
 
 const projectsObject = [
   {
@@ -26,7 +27,7 @@ const projectsObject = [
     id: '2',
     projectTitle: 'Nxt Watch',
     thumbnail:
-      'https://res.cloudinary.com/dzapdxkgc/image/upload/v1682670457/Screenshot_2023-04-27_190601_zbojz6.png',
+      'https://res.cloudinary.com/dzapdxkgc/image/upload/v1682699386/Screenshot_2023-04-27_190648_aggiwl.png',
     projectLink: 'https://nxtwatchnvin.ccbp.tech',
     projectAbt:
       'Implemented Nxt Watch application which is a clone for YouTube where users can log in and can see a list of videos like Trending, Gaming, Saved videos, and also can search videos and view specific video details, and users can toggle the theme (Light/Dark).',
@@ -63,9 +64,32 @@ const projectsObject = [
   },
 ]
 
+// const miniProjectObj = [
+//   {
+//     id: '4',
+//     projectTitle: 'Emoji Game',
+
+//     projectLink: 'https://navinemogame.ccbp.tech/',
+//     projectAbt:
+//       'Developed responsive Emoji memory game where users can win it by clicking unique emoji each time till all displayed emojis are clicked. All emojis positions will be randomized after each click',
+//     technologiesUsed: ' React JS, CSS, Bootstrap',
+//   },
+//   {
+//     id: '5',
+//     projectTitle: 'Mini Games (Match Game)',
+
+//     projectLink: 'https://matchgme.ccbp.tech/',
+//     projectAbt:
+//       'Implemented a responsive Mini Games app where users can play a collection of memory games like Emoji Game, Rock Paper Scissors, Memory Matrix, and Card Flip Game by following given instructions.',
+//   },
+// ]
+
 const ProjectsComponents = () => (
   <div className="projects-main-container" id="Projects">
     <div className="projects-sub-container">
+      <h1 className="section-heading project-heading">
+        Check out my Recent projects
+      </h1>
       <ul className="projects-ul-list-container">
         {projectsObject.map(projectItem => (
           <ProjectItem projectItem={projectItem} key={projectItem.id} />

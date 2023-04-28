@@ -10,7 +10,7 @@ const AboutComponent = () => (
   <div className="about-main-container " id="aboutComponent">
     <ScrollAnimation
       animateIn="fadeIn"
-      duration="2"
+      duration={2}
       animateOnce
       className="scrollContainer"
     >

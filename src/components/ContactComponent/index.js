@@ -9,7 +9,7 @@ const ContactComponent = () => (
   <div className="contact-main-container" id="contact">
     <ScrollAnimation
       animateIn="fadeIn"
-      duration="3.5"
+      duration="2s"
       animateOnce
       className="scrollContainer contact"
     >

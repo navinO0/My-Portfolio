@@ -14,8 +14,9 @@
   margin: auto;
 }
 .conclusion-content {
-  width: 600px;
+  width: 700px;
 }
+
 .social-media-links {
   display: flex;
   flex-direction: column;
@@ -32,7 +33,7 @@
   padding-left: 15px;
 }
 .link-li-item-container {
-  margin-right: 30px;
+  margin-right: 15px;
 }
 
 .nav-link-item-contact {
@@ -50,11 +51,20 @@
 }
 
 .social-links-icons {
-  font-size: 30px;
+  font-size: 20px;
 }
 
 .contact {
   margin: auto;
+}
+
+@media screen and (max-width: 768px) {
+  .conclusion-content {
+    width: 90%;
+  }
+  .social-links-icons {
+    font-size: 19px;
+  }
 }
 
 :root {
@@ -85,6 +95,7 @@ body {
 .glowing-btn {
   position: relative;
   color: var(--glow-color);
+  margin-top: 30px;
   cursor: pointer;
   padding: 0.35em 1em;
   border: 0.1em solid var(--glow-color);
@@ -150,7 +161,7 @@ body {
 }
 
 .glowing-btn:hover {
-  color: #ffffff;
+  color: #fbfbfb;
   text-shadow: none;
   animation: none;
 }
@@ -279,6 +290,6 @@ body {
 }
 
 .footer-content {
-  font-family: Tahoma, Verdana, sans-serif;
+  font-family: 'SF Mono', 'Fira Code', 'Fira Mono', 'Roboto Mono', monospace;
   color: #ffffff76;
 }

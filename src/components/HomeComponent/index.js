@@ -6,7 +6,7 @@ const HomeComponent = () => (
   <div className="home-component-main-container " data-aos="fade-up">
     <ScrollAnimation
       animateIn="fadeIn"
-      duration="3.5"
+      duration={2}
       animateOnce
       className="scrollContainer"
     >
