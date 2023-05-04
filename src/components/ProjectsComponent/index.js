@@ -22,6 +22,7 @@ const projectsObject = [
     technologiesUsed:
       ' HTML, CSS, JavaScript, React JS, Bootstrap, React Slick, Figma, client storage',
     credentials: 'User Name : rahul  And  Password : rahul@2021',
+    gitHubLink: 'https://github.com/navinO0/Movies-App.git',
   },
   {
     id: '2',
@@ -41,6 +42,7 @@ const projectsObject = [
     technologiesUsed:
       ' React JS, JS, CSS, Bootstrap, Routing, REST API Calls, Local Storage, JWT Token,Authorization, Authentication',
     credentials: 'User Name : rahul  And  Password : rahul@2021',
+    gitHubLink: 'https://github.com/navinO0/NxtWatch.git',
   },
   {
     id: '3',
@@ -61,6 +63,31 @@ const projectsObject = [
     technologiesUsed:
       ' React JS, JS, CSS, Bootstrap, Routing, REST API Calls, Local Storage, JWT Token, Authorization, Authentication',
     credentials: 'User Name : rahul   And  Password : rahul@2021',
+    gitHubLink: 'https://github.com/navinO0/jobbyApp.git',
+  },
+  {
+    id: '4',
+    projectTitle: 'Form Validation',
+    thumbnail:
+      'https://res.cloudinary.com/dzapdxkgc/image/upload/v1683199213/Screenshot_2023-05-04_164920_ll7jss.png',
+    projectLink: 'https://form-validation-by-navin.netlify.app/',
+    projectAbt:
+      'Implemented simple form where user can register their details and view the registered users details.And user can search for a particular person details using search component.',
+    projectKeyPoints: [
+      'Validation Futures',
+      'Name, age, gender are Required fields',
+      'Mobile And Emergency Contact number which Accepts Valid Indian Number',
+
+      'If Govt ID type is aadhaar the govt id will only accepts digits and length should be 12 digits.',
+      'If Govt ID type is PAN will accepts alpha Numerics and length should be 10  characters.',
+      'Implemented different Routes like register route where user can register their details And users route where user can see the registered users list.',
+      ' Implemented Backend services like GET and POST. In the POST request the Users details is stored the database and In GET request it will give all the users details present in the Database.',
+      ' Components And Hooks Used:',
+      'React Form Hook, Axios, React-Datatable, React-csv,React-Router, Yup validation library.',
+    ],
+    technologiesUsed:
+      ' React JS, JS, CSS, Routing, REST API Calls, Node, Express.js, sqlite',
+    gitHubLink: 'https://github.com/navinO0/form-validation-frontend.git',
   },
 ]
 

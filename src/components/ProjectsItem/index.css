@@ -2,6 +2,7 @@
   list-style: none;
   margin-bottom: 20px;
   width: 100%;
+  max-width: 1500px;
 }
 .project-item-list-container {
   display: flex;
@@ -21,6 +22,7 @@
   object-fit: fill;
   border-radius: 10px;
   aspect-ratio: 16/9;
+  opacity: 0.8;
   box-shadow: 0px 4px 16px 0px #1c232cbe;
 }
 .details-container {
@@ -40,6 +42,7 @@
 }
 .key-points-ul-container {
   list-style: none;
+  padding-left: 0px;
 }
 
 .content {
@@ -48,6 +51,7 @@
   margin-bottom: 0px;
   margin-right: 9px;
   color: #a7beae;
+  line-height: 1.2;
   font-family: Comic Sans, Comic Sans MS, cursive;
 }
 
@@ -70,6 +74,21 @@
   display: none;
 }
 
+.credentials-links-container {
+  display: flex;
+
+  height: 40px;
+  justify-content: space-between;
+}
+.social-links {
+  display: flex;
+  align-items: center;
+  width: auto;
+  justify-content: space-between;
+}
+.project-icon {
+  margin-right: 20px;
+}
 @media screen and (max-width: 768px) {
   .project-item-list-container {
     flex-direction: column;

@@ -1,4 +1,6 @@
 import ScrollAnimation from 'react-animate-on-scroll'
+import {BiLinkExternal} from 'react-icons/bi'
+import {BsGithub} from 'react-icons/bs'
 // import {BiLinkExternal} from 'react-icons/bi'
 import './index.css'
 
@@ -13,6 +15,7 @@ const ProjectItem = props => {
     projectKeyPoints,
     technologiesUsed,
     credentials,
+    gitHubLink,
   } = projectItem
 
   const ordThumb = parseInt(id) % 2 === 0 ? 0 : 1
@@ -41,8 +44,27 @@ const ProjectItem = props => {
                 className="project-item-thumbnail "
                 alt={projectTitle}
               />
-
-              <p className="content "> {credentials}</p>
+              <div className="credentials-links-container">
+                <p className="content "> {credentials}</p>
+                <div className="social-links">
+                  <a
+                    href={gitHubLink}
+                    target="_blank"
+                    rel="noreferrer"
+                    className=" nav-link-item-contact "
+                  >
+                    <BsGithub className="social-links-icons project-icon" />
+                  </a>
+                  <a
+                    href={projectLink}
+                    target="_blank"
+                    rel="noreferrer"
+                    className=" nav-link-item-contact "
+                  >
+                    <BiLinkExternal className="social-links-icons  project-icon" />
+                  </a>
+                </div>
+              </div>
             </ScrollAnimation>
           </div>
           <div className="details-container" style={{order: ordThumb}}>
@@ -100,7 +122,27 @@ const ProjectItem = props => {
                 alt={projectTitle}
               />
 
-              <p className="content "> {credentials}</p>
+              <div className="credentials-links-container">
+                <p className="content "> {credentials}</p>
+                <div className="social-links">
+                  <a
+                    href={gitHubLink}
+                    target="_blank"
+                    rel="noreferrer"
+                    className=" nav-link-item-contact "
+                  >
+                    <BsGithub className="social-links-icons project-icon" />
+                  </a>
+                  <a
+                    href={projectLink}
+                    target="_blank"
+                    rel="noreferrer"
+                    className=" nav-link-item-contact "
+                  >
+                    <BiLinkExternal className="social-links-icons  project-icon" />
+                  </a>
+                </div>
+              </div>
             </ScrollAnimation>
           </div>
           <div className="details-container">
