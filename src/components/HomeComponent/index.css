@@ -38,8 +38,7 @@
 }
 .summery-container {
   max-width: 1500px;
-  min-width: 90%;
-  width: 1300px;
+  width: 80vw;
 }
 .summery-content {
   font-size: 22px;
