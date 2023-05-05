@@ -1,4 +1,5 @@
 import ScrollAnimation from 'react-animate-on-scroll'
+
 import {AiFillHtml5} from 'react-icons/ai'
 import {IoLogoCss3} from 'react-icons/io'
 import {SiJavascript, SiExpress, SiNodedotjs} from 'react-icons/si'
@@ -33,6 +34,7 @@ const AboutComponent = () => (
             ups and downs but if you love what you do and are able to provide
             value to people, the outcomes are far more rewarding! :-)
           </p>
+
           <p className="summery-content ">
             Here are a few technologies I’ve been working with recently:
           </p>

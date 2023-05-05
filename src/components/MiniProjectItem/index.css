@@ -1,0 +1,46 @@
+.miniProject-li-item-container {
+  width: 42vw;
+
+  padding: 10px;
+  height: auto;
+}
+
+.miniProject-main-container {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  padding: 10px;
+  background-color: #48638852;
+  box-shadow: 0px 4px 16px 0px #28323e50;
+  border-radius: 10px;
+  height: 100%;
+}
+
+.mini-project-icon {
+  font-size: 50px;
+  color: #a7beae;
+}
+.credentials-links-container-mini {
+  display: flex;
+  align-items: flex-end;
+  padding: 10px;
+  justify-content: space-between;
+
+  width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+  .miniProject-li-item-container {
+    width: 100%;
+  }
+}
+.react-logo-redirect-link {
+}
+.mini-project-description-container {
+}
+.mini-content {
+}
+.mini-project-technologies-used-container {
+}
+.mini-content {
+}

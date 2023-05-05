@@ -1,5 +1,5 @@
 import ScrollAnimation from 'react-animate-on-scroll'
-
+import ReactTyped from 'react-typed'
 import './index.css'
 
 const HomeComponent = () => (
@@ -19,14 +19,25 @@ const HomeComponent = () => (
           <h3 className="short-description ">I Build Things for web.</h3>
         </div>
         <div className="summery-container">
-          <p className="summery-content ">
+          {/* <p className="summery-content ">
             Logical and results-driven full stack developer dedicated to
             building and optimizing user-focused websites and applications.
             Judicious and creative when crafting effective websites, apps and
             platforms to propel competitive advantage and revenue growth.
             Technically proficient and analytical problem solver with calm and
             focused demeanor.
-          </p>
+          </p> */}
+          <ReactTyped
+            className="summery-content"
+            strings={[
+              'Logical and results-driven full stack developer dedicated to building and optimizing user-focused websites and applications. Judicious and creative when crafting effective websites, apps and platforms to propel competitive advantage and revenue growth. Technically proficient and analytical problem solver with calm and focused demeanor.',
+            ]}
+            typeSpeed={30}
+            backSpeed={50}
+            backDelay={1}
+            smartBackspace
+            fadeOut
+          />
         </div>
       </div>
     </ScrollAnimation>

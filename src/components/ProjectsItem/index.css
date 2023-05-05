@@ -22,7 +22,7 @@
   object-fit: fill;
   border-radius: 10px;
   aspect-ratio: 16/9;
-  opacity: 0.8;
+
   box-shadow: 0px 4px 16px 0px #1c232cbe;
 }
 .details-container {

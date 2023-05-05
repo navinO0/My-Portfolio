@@ -1,5 +1,6 @@
 import './index.css'
 import ProjectItem from '../ProjectsItem'
+import MiniProjectItem from '../MiniProjectItem'
 // import MiniProjectItem from '../MiniProjectItem'
 
 const projectsObject = [
@@ -91,25 +92,28 @@ const projectsObject = [
   },
 ]
 
-// const miniProjectObj = [
-//   {
-//     id: '4',
-//     projectTitle: 'Emoji Game',
+const miniProjectObj = [
+  {
+    id: '4',
+    projectTitle: 'Emoji Game',
 
-//     projectLink: 'https://navinemogame.ccbp.tech/',
-//     projectAbt:
-//       'Developed responsive Emoji memory game where users can win it by clicking unique emoji each time till all displayed emojis are clicked. All emojis positions will be randomized after each click',
-//     technologiesUsed: ' React JS, CSS, Bootstrap',
-//   },
-//   {
-//     id: '5',
-//     projectTitle: 'Mini Games (Match Game)',
+    projectLink: 'https://navinemogame.ccbp.tech/',
+    gitHubLink: 'https://github.com/navinO0/emoji-game.git',
+    projectAbt:
+      'Developed responsive Emoji memory game where users can win it by clicking unique emoji each time till all displayed emojis are clicked. All emojis positions will be randomized after each click',
+    technologiesUsed: ' React JS, CSS, Bootstrap',
+  },
+  {
+    id: '5',
+    projectTitle: 'Mini Games (Match Game)',
 
-//     projectLink: 'https://matchgme.ccbp.tech/',
-//     projectAbt:
-//       'Implemented a responsive Mini Games app where users can play a collection of memory games like Emoji Game, Rock Paper Scissors, Memory Matrix, and Card Flip Game by following given instructions.',
-//   },
-// ]
+    projectLink: 'https://matchgme.ccbp.tech/',
+    gitHubLink: 'https://github.com/navinO0/matchGame.git',
+    projectAbt:
+      'Developed responsive image memory game where users can increase their Score by clicking matching image with the displayed random image each time till all displayed images are clicked.',
+    technologiesUsed: ' React JS, CSS, Bootstrap',
+  },
+]
 
 const ProjectsComponents = () => (
   <div className="projects-main-container" id="Projects">
@@ -120,6 +124,11 @@ const ProjectsComponents = () => (
       <ul className="projects-ul-list-container">
         {projectsObject.map(projectItem => (
           <ProjectItem projectItem={projectItem} key={projectItem.id} />
+        ))}
+      </ul>
+      <ul className="projects-ul-list-container-mini">
+        {miniProjectObj.map(projectItem => (
+          <MiniProjectItem eachOne={projectItem} key={projectItem.id} />
         ))}
       </ul>
     </div>
