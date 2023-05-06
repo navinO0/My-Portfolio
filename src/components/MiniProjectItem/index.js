@@ -1,4 +1,5 @@
 import ScrollAnimation from 'react-animate-on-scroll'
+import {RiGamepadFill} from 'react-icons/ri'
 import {BsEmojiHeartEyes, BsGithub} from 'react-icons/bs'
 import {IoMdPhotos} from 'react-icons/io'
 import {BiLinkExternal} from 'react-icons/bi'
@@ -22,6 +23,8 @@ const MiniProjectItem = props => {
 
       case 'Mini Games (Match Game)':
         return <IoMdPhotos className="mini-project-icon" />
+      case 'Mini Games (Rock paper Scissors)':
+        return <RiGamepadFill className="mini-project-icon" />
       default:
         return ''
     }

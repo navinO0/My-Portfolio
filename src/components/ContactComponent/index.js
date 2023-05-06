@@ -2,6 +2,7 @@ import ScrollAnimation from 'react-animate-on-scroll'
 import {AiOutlineInstagram} from 'react-icons/ai'
 import {FaFacebookSquare} from 'react-icons/fa'
 import {SiGithub, SiGmail} from 'react-icons/si'
+import {BsLinkedin} from 'react-icons/bs'
 
 import './index.css'
 
@@ -36,6 +37,37 @@ const ContactComponent = () => (
       <ul className="link-item-container">
         <li className="link-li-item-container">
           <a
+            href="https://github.com/navinO0"
+            target="_blank"
+            rel="noreferrer"
+            className=" nav-link-item-contact "
+          >
+            <SiGithub className="social-links-icons" />
+          </a>
+        </li>
+
+        <li className="link-li-item-container">
+          <a
+            href="https://www.linkedin.com/in/naveen-kumar-kambham"
+            target="_blank"
+            rel="noreferrer"
+            className=" nav-link-item-contact "
+          >
+            <BsLinkedin className="social-links-icons" />
+          </a>
+        </li>
+        <li className="link-li-item-container nav-link-item">
+          <a
+            href="mailto:6y.navin@gmail.com?"
+            target="_blank"
+            rel="noreferrer"
+            className=" nav-link-item-contact "
+          >
+            <SiGmail className="social-links-icons" />
+          </a>
+        </li>
+        <li className="link-li-item-container">
+          <a
             href="https://instagram.com/o_0.navin?igshid=ZDdkNTZiNTM="
             target="_blank"
             rel="noreferrer"
@@ -52,26 +84,6 @@ const ContactComponent = () => (
             className=" nav-link-item-contact"
           >
             <FaFacebookSquare className="social-links-icons" />
-          </a>
-        </li>
-        <li className="link-li-item-container nav-link-item">
-          <a
-            href="mailto:6y.navin@gmail.com?"
-            target="_blank"
-            rel="noreferrer"
-            className=" nav-link-item-contact "
-          >
-            <SiGmail className="social-links-icons" />
-          </a>
-        </li>
-        <li className="link-li-item-container">
-          <a
-            href="https://github.com/navinO0"
-            target="_blank"
-            rel="noreferrer"
-            className=" nav-link-item-contact "
-          >
-            <SiGithub className="social-links-icons" />
           </a>
         </li>
       </ul>

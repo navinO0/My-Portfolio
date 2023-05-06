@@ -94,7 +94,7 @@ const projectsObject = [
 
 const miniProjectObj = [
   {
-    id: '4',
+    id: '1',
     projectTitle: 'Emoji Game',
 
     projectLink: 'https://navinemogame.ccbp.tech/',
@@ -104,13 +104,23 @@ const miniProjectObj = [
     technologiesUsed: ' React JS, CSS, Bootstrap',
   },
   {
-    id: '5',
+    id: '2',
     projectTitle: 'Mini Games (Match Game)',
 
     projectLink: 'https://matchgme.ccbp.tech/',
     gitHubLink: 'https://github.com/navinO0/matchGame.git',
     projectAbt:
       'Developed responsive image memory game where users can increase their Score by clicking matching image with the displayed random image each time till all displayed images are clicked.',
+    technologiesUsed: ' React JS, CSS, Bootstrap',
+  },
+  {
+    id: '3',
+    projectTitle: 'Mini Games (Rock paper Scissors)',
+
+    projectLink: 'https://rpcgamenavin.ccbp.tech/',
+    gitHubLink: 'https://github.com/navinO0/Rock-Paper-Scissor-game.git',
+    projectAbt:
+      'Rock, Paper, Scissors. The familiar game of Rock, Paper, Scissors is played like this: at the same time, two players display one of three symbols: a rock, paper, or scissors. A rock beats scissors, scissors beat paper by cutting it, and paper beats rock by covering it.',
     technologiesUsed: ' React JS, CSS, Bootstrap',
   },
 ]
