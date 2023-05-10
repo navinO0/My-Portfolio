@@ -20,9 +20,9 @@
 .project-item-thumbnail {
   max-width: 700px;
   object-fit: fill;
-  border-radius: 10px;
-  aspect-ratio: 16/9;
-
+  border-radius: 5px;
+  aspect-ratio: auto;
+  flex-shrink: 0;
   box-shadow: 0px 4px 16px 0px #1c232cbe;
 }
 .details-container {
@@ -93,6 +93,7 @@
   .project-item-list-container {
     flex-direction: column;
     align-items: center;
+    padding: 7px;
   }
   .project-list-item-sm {
     display: block;
@@ -103,6 +104,7 @@
   }
   .project-item-thumbnail {
     width: 100%;
+    border-radius: 4px;
   }
   .details-container {
     width: 100%;
@@ -118,7 +120,7 @@
     width: 100%;
 
     object-fit: fill;
-    border-radius: 10px;
+    border-radius: 4px;
     box-shadow: 0px 4px 16px 0px #1c232cbe;
   }
   .titles {

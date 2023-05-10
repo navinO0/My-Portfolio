@@ -75,7 +75,7 @@ const projectsObject = [
     projectAbt:
       'Implemented simple form where user can register their details and view the registered users details.And user can search for a particular person details using search component.',
     projectKeyPoints: [
-      'Validation Futures',
+      'Validation Features:',
       'Name, age, gender are Required fields',
       'Mobile And Emergency Contact number which Accepts Valid Indian Number',
 
