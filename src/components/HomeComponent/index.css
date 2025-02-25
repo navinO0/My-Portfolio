@@ -78,12 +78,12 @@
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
 }
-.hello-image-container{
+.hello-image-container {
   display: flex;
   flex-direction: row;
   align-items: end;
 }
-.hello-image{
+.hello-image {
   width: 300px;
   height: 300px;
   margin-left: auto;
