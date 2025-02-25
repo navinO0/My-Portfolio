@@ -18,10 +18,10 @@ const ContactComponent = () => (
         <h1 className="name-content">Get In Touch</h1>
         <div className="conclusion-content">
           <p className="summery-content">
-            I am pleased to announce that I am looking for a new opportunity in
-            the field of Full Stack Development. I have enclosed my resume and
-            would love to hear from anyone who may have an opening or knows
-            someone who does. Thank you for your time!
+            I’m excited to explore new opportunities in Full Stack Development!
+            My resume is attached, and I’d love to connect with anyone who has
+            or knows of relevant openings. Looking forward to new
+            challenges—thank you for your time!
           </p>
         </div>
         <a href="mailto:6y.navin@gmail.com?" target="_blank" rel="noreferrer">
@@ -87,7 +87,7 @@ const ContactComponent = () => (
           </a>
         </li>
       </ul>
-      <p className="footer-content">Created by Naveen Kumar Kambham</p>
+      <p className="footer-content">Created by Navin</p>
     </div>
   </div>
 )

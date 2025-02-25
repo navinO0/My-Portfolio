@@ -22,7 +22,7 @@ const projectsObject = [
     ],
     technologiesUsed:
       ' HTML, CSS, JavaScript, React JS, Bootstrap, React Slick, Figma, client storage',
-    credentials: 'User Name : rahul  And  Password : rahul@2021',
+    credentials: 'Username : rahul  And  Password : rahul@2021',
     gitHubLink: 'https://github.com/navinO0/Movies-App.git',
   },
   {
@@ -42,7 +42,7 @@ const projectsObject = [
     ],
     technologiesUsed:
       ' React JS, JS, CSS, Bootstrap, Routing, REST API Calls, Local Storage, JWT Token,Authorization, Authentication',
-    credentials: 'User Name : rahul  And  Password : rahul@2021',
+    credentials: 'Username : rahul  And  Password : rahul@2021',
     gitHubLink: 'https://github.com/navinO0/NxtWatch.git',
   },
   {
@@ -63,7 +63,7 @@ const projectsObject = [
     ],
     technologiesUsed:
       ' React JS, JS, CSS, Bootstrap, Routing, REST API Calls, Local Storage, JWT Token, Authorization, Authentication',
-    credentials: 'User Name : rahul   And  Password : rahul@2021',
+    credentials: 'Username : rahul   And  Password : rahul@2021',
     gitHubLink: 'https://github.com/navinO0/jobbyApp.git',
   },
   {
@@ -128,9 +128,9 @@ const miniProjectObj = [
 const ProjectsComponents = () => (
   <div className="projects-main-container" id="Projects">
     <div className="projects-sub-container">
-      <h1 className="section-heading project-heading">
-        Check out my Recent projects
-      </h1>
+      {/* <h1 className="section-heading project-heading">
+        Checkout my Recent projects
+      </h1> */}
       <ul className="projects-ul-list-container">
         {projectsObject.map(projectItem => (
           <ProjectItem projectItem={projectItem} key={projectItem.id} />

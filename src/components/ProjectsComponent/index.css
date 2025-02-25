@@ -29,6 +29,10 @@
   max-width: 1500px;
   justify-content: space-between;
 }
+.section-heading{
+  text-align: start;
+  width: 90%;
+}
 
 @media screen and (max-width: 768px) {
   .projects-sub-container {

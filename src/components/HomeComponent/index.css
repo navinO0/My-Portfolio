@@ -24,7 +24,7 @@
     system-ui, sans-serif;
   font-size: 50px;
   margin-top: 0px;
-  color: #e7e8d1ed;
+  color: #ececeaed;
   font-weight: 500;
   margin-bottom: 0px;
 }
@@ -44,7 +44,7 @@
   font-size: 22px;
   font-family: Comic Sans, Comic Sans MS, cursive;
 
-  color: #a7beae;
+  color: #f5eeee;
 }
 
 @media screen and (max-width: 768px) {
@@ -77,6 +77,16 @@
   animation-duration: 700ms;
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
+}
+.hello-image-container{
+  display: flex;
+  flex-direction: row;
+  align-items: end;
+}
+.hello-image{
+  width: 300px;
+  height: 300px;
+  margin-left: auto;
 }
 @-webkit-keyframes fadeInUp {
   0% {
