@@ -25,10 +25,11 @@
   align-items: flex-end;
   padding: 10px;
   justify-content: space-between;
-
   width: 100%;
 }
-
+.fill-width {
+  width: 100%;
+}
 @media screen and (max-width: 768px) {
   .miniProject-li-item-container {
     width: 100%;

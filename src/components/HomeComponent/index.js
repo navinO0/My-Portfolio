@@ -1,12 +1,12 @@
-import ScrollAnimation from 'react-animate-on-scroll'
-import ReactTyped from 'react-typed'
+import {Fade} from 'react-awesome-reveal'
+import {ReactTyped} from 'react-typed'
 import './index.css'
 
 const HomeComponent = () => (
   <div className="home-component-main-container " data-aos="fade-up">
-    <ScrollAnimation
+    <Fade
       animateIn="fadeIn"
-      duration={2}
+      duration={2000}
       animateOnce
       className="scrollContainer"
     >
@@ -42,7 +42,7 @@ const HomeComponent = () => (
           </div>
         </div>
       </div>
-    </ScrollAnimation>
+    </Fade>
   </div>
 )
 

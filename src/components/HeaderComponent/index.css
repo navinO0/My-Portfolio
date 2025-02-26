@@ -22,8 +22,14 @@
 }
 .header-links {
   color: #fcf6f5ff;
-  font-family: 'Calibre', 'Inter', 'San Francisco', 'SF Pro Text', -apple-system,
-    system-ui, sans-serif;
+  font-family:
+    'Calibre',
+    'Inter',
+    'San Francisco',
+    'SF Pro Text',
+    -apple-system,
+    system-ui,
+    sans-serif;
   text-decoration: none;
   font-size: 20px;
   margin-right: 20px;
@@ -198,7 +204,9 @@
   color: #ffffff;
   text-shadow: 0 0 10px #ffffff;
 
-  text-shadow: inset 2 2 2 #ffffff, 0 0 1.2em rgba(243, 6, 6, 0.5);
+  text-shadow:
+    inset 2 2 2 #ffffff,
+    0 0 1.2em rgba(243, 6, 6, 0.5);
 }
 
 .hover-underline-animation {

@@ -1,4 +1,5 @@
-import ScrollAnimation from 'react-animate-on-scroll'
+// import Fade from 'react-animate-on-scroll'
+import {Fade} from 'react-awesome-reveal'
 import {RiGamepadFill} from 'react-icons/ri'
 import {BsEmojiHeartEyes, BsGithub} from 'react-icons/bs'
 import {IoMdPhotos} from 'react-icons/io'
@@ -8,13 +9,8 @@ import './index.css'
 
 const MiniProjectItem = props => {
   const {eachOne} = props
-  const {
-    projectLink,
-    projectTitle,
-    projectAbt,
-    gitHubLink,
-    technologiesUsed,
-  } = eachOne
+  const {projectLink, projectTitle, projectAbt, gitHubLink, technologiesUsed} =
+    eachOne
 
   const renderIcon = () => {
     switch (projectTitle) {
@@ -33,7 +29,7 @@ const MiniProjectItem = props => {
   return (
     <li className="miniProject-li-item-container">
       <div className="miniProject-main-container">
-        <ScrollAnimation animateIn="fadeIn " duration={2} animateOnce>
+        <Fade animateIn="fadeOut " duration={2000} className="fill-width">
           <div className="credentials-links-container-mini">
             {renderIcon()}
             <div className="social-links">
@@ -73,7 +69,7 @@ const MiniProjectItem = props => {
           <div className="project-technologies-used-container">
             <p className="content">{technologiesUsed}</p>
           </div>
-        </ScrollAnimation>
+        </Fade>
       </div>
     </li>
   )

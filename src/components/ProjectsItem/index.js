@@ -1,4 +1,4 @@
-import ScrollAnimation from 'react-animate-on-scroll'
+import {Fade} from 'react-awesome-reveal'
 import {BiLinkExternal} from 'react-icons/bi'
 import {BsGithub} from 'react-icons/bs'
 // import {BiLinkExternal} from 'react-icons/bi'
@@ -20,7 +20,7 @@ const ProjectItem = props => {
 
   const ordThumb = parseInt(id) % 2 === 0 ? 0 : 1
   const ordCont = parseInt(id) % 2 === 0 ? 1 : 0
-  const scrollDuration = 2
+  const scrollDuration = 2000
   return (
     <>
       <li className="project-list-item">
@@ -34,11 +34,7 @@ const ProjectItem = props => {
         </a>
         <div className="project-item-list-container">
           <div className="project-image-container" style={{order: ordCont}}>
-            <ScrollAnimation
-              animateIn="fadeIn "
-              duration={scrollDuration}
-              animateOnce
-            >
+            <Fade animateIn="fadeIn " duration={scrollDuration} animateOnce>
               <img
                 src={thumbnail}
                 className="project-item-thumbnail "
@@ -65,30 +61,26 @@ const ProjectItem = props => {
                   </a>
                 </div>
               </div>
-            </ScrollAnimation>
+            </Fade>
           </div>
           <div className="details-container" style={{order: ordThumb}}>
-            <ScrollAnimation
-              animateIn="fadeInUp "
-              duration={scrollDuration}
-              animateOnce
-            >
+            <Fade animateIn="fadeInUp " duration={scrollDuration} animateOnce>
               <p className="content ">{projectAbt}</p>
-            </ScrollAnimation>
+            </Fade>
             <ul className="key-points-ul-container">
               {projectKeyPoints.map(eachPoint => (
                 <li className="key-points-list-item ">
-                  <ScrollAnimation
+                  <Fade
                     animateIn="fadeInUp "
                     duration={scrollDuration}
                     animateOnce
                   >
                     <p className="content ">{eachPoint}</p>
-                  </ScrollAnimation>
+                  </Fade>
                 </li>
               ))}
             </ul>
-            <ScrollAnimation
+            <Fade
               animateIn="fadeInUp "
               duration={scrollDuration}
               offset="50"
@@ -96,7 +88,7 @@ const ProjectItem = props => {
             >
               <p className="content ">Technologies Used: </p>
               <p className=" content ">{technologiesUsed}</p>
-            </ScrollAnimation>
+            </Fade>
           </div>
         </div>
       </li>
@@ -111,11 +103,7 @@ const ProjectItem = props => {
         </a>
         <div className="project-item-list-container">
           <div className="project-image-container">
-            <ScrollAnimation
-              animateIn="fadeIn "
-              duration={scrollDuration}
-              animateOnce
-            >
+            <Fade animateIn="fadeIn " duration={scrollDuration} animateOnce>
               <img
                 src={thumbnail}
                 className="project-item-thumbnail "
@@ -143,30 +131,26 @@ const ProjectItem = props => {
                   </a>
                 </div>
               </div>
-            </ScrollAnimation>
+            </Fade>
           </div>
           <div className="details-container">
-            <ScrollAnimation
-              animateIn="fadeInUp "
-              duration={scrollDuration}
-              animateOnce
-            >
+            <Fade animateIn="fadeInUp " duration={scrollDuration} animateOnce>
               <p className="content ">{projectAbt}</p>
-            </ScrollAnimation>
+            </Fade>
             <ul className="key-points-ul-container">
               {projectKeyPoints.map(eachPoint => (
                 <li className="key-points-list-item ">
-                  <ScrollAnimation
+                  <Fade
                     animateIn="fadeInUp "
                     duration={scrollDuration}
                     animateOnce
                   >
                     <p className="content ">{eachPoint}</p>
-                  </ScrollAnimation>
+                  </Fade>
                 </li>
               ))}
             </ul>
-            <ScrollAnimation
+            <Fade
               animateIn="fadeInUp "
               duration={scrollDuration}
               offset="50"
@@ -174,7 +158,7 @@ const ProjectItem = props => {
             >
               <p className="content ">Technologies Used: </p>
               <p className=" content ">{technologiesUsed}</p>
-            </ScrollAnimation>
+            </Fade>
           </div>
         </div>
       </li>

@@ -1,4 +1,5 @@
-import ScrollAnimation from 'react-animate-on-scroll'
+import {Fade} from 'react-awesome-reveal'
+import {ReactTyped} from 'react-typed'
 import styled from 'styled-components'
 import {AiFillHtml5} from 'react-icons/ai'
 import {IoLogoCss3} from 'react-icons/io'
@@ -29,7 +30,7 @@ const ListItem = styled.li`
   color: rgba(255, 255, 255, 0.64);
   list-style: none;
   margin: 20px;
-  font-size: 40px;
+  font-size: 50px;
   filter: drop-shadow(2px 2px 3px rgba(0, 0, 0, 0.5));
   transform: translateY(0px);
   animation: float ${({duration}) => duration || '2s'} ease-in-out infinite;
@@ -49,14 +50,25 @@ const ListItem = styled.li`
   }
 `
 
+const buletPointsforExpCard = {
+  company: [
+    'Quantela.',
+    'Software Engineer(Associate) | 01 June, 2023 - Present',
+  ],
+  title: 'Backend Developer',
+  expContent: [
+    'Developed, tested, and deployed software solutions.',
+    'Participated in sprint planning and task prioritization.',
+    'Optimized algorithms and improved performance.',
+    'Created training materials for end-users.',
+    'Documented software methodologies and technical manuals.',
+    'Conducted testing and fixed software issues.',
+  ],
+}
+
 const AboutComponent = () => (
   <div className="about-main-container " id="aboutComponent">
-    <ScrollAnimation
-      animateIn="fadeIn"
-      duration={2}
-      animateOnce
-      className="scrollContainer"
-    >
+    <Fade out duration={2000} animateOnce className="scrollContainer">
       <div className="about-sub-container">
         <div className="about-me-heading-container">
           <h1 className="section-heading">About Me</h1>
@@ -78,10 +90,53 @@ const AboutComponent = () => (
             career, constantly learning and improving to create impactful
             digital experiences! 🚀
           </p>
-
           <p className="summery-content ">
             Here are a few technologies I’ve been working with recently:
           </p>
+          <span className="summery-content">
+            Tech Stack:{' '}
+            <ReactTyped
+              className="summery-content"
+              strings={[
+                'JavaScript Development',
+                'React Library',
+                'Node.js Development',
+                'RESTful API',
+                'API Design',
+                'SQL Database Management',
+                'SQL Databases',
+                'MongoDB (NoSQL)',
+                'Elasticsearch',
+                'Redis',
+                'Apache Kafka',
+                'Data Security',
+                'Data Encryption',
+                'Technical Troubleshooting',
+                'Data Collation',
+                'PL/SQL',
+                'Query Optimization',
+                'Relational Databases',
+                'Software Debugging',
+                'Code Testing and Review',
+                'Regression Testing',
+                'Design and Code Review',
+                'Debugging Techniques',
+                'Quality Assurance Knowledge',
+                'Software Production',
+                'Git Version Control',
+                'GitHub',
+                'Source Control (Git, Subversion, JIRA)',
+                'Collaborative Leadership',
+                'Multitasking Proficiency',
+                'Patience and Persistence',
+              ]}
+              typeSpeed={70}
+              backSpeed={50}
+              backDelay={1000}
+              smartBackspace
+              loop
+            />
+          </span>
           <div className="tech-stack-display">
             <div className="skill-sections">
               <ul className="ul-tech-stack">
@@ -315,9 +370,41 @@ const AboutComponent = () => (
               </ul>
             </div>
           </div>
+          <div className="about-me-heading-container">
+            <h1 className="section-heading">Experience</h1>
+          </div>
+          <div className="project-item-list-container exp-card">
+            <div className="exp-card-details-container">
+              <ul>
+                {buletPointsforExpCard.company.map(eachPoint => (
+                  <li className=" key-points-list-item company-name">
+                    <Fade animateIn="fadeInUp" duration={2000}>
+                      <p className="content company">{eachPoint}</p>
+                    </Fade>
+                  </li>
+                ))}
+                {buletPointsforExpCard.expContent.map(eachPoint => (
+                  <li className=" key-points-list-item exp-points">
+                    <Fade animateIn="fadeInUp " duration={2000}>
+                      <p className="content exp-content">{eachPoint}</p>
+                    </Fade>
+                  </li>
+                ))}
+              </ul>
+            </div>
+            <div className="exp-image-container">
+              <Fade animateIn="fadeIn" duration={2000} animateOnce>
+                <img
+                  src="https://res.cloudinary.com/dzapdxkgc/image/upload/v1740598607/Quantela_Logo_White-1_xtebtj.svg"
+                  className="about-exp-img"
+                  alt="abc"
+                />
+              </Fade>
+            </div>
+          </div>
         </div>
       </div>
-    </ScrollAnimation>
+    </Fade>
   </div>
 )
 
