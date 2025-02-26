@@ -1,4 +1,4 @@
-import ScrollAnimation from 'react-animate-on-scroll'
+import {Fade} from 'react-awesome-reveal'
 import {AiOutlineInstagram} from 'react-icons/ai'
 import {FaFacebookSquare} from 'react-icons/fa'
 import {SiGithub, SiGmail} from 'react-icons/si'
@@ -8,10 +8,10 @@ import './index.css'
 
 const ContactComponent = () => (
   <div className="contact-main-container" id="contact">
-    <ScrollAnimation
-      animateIn="fadeIn"
-      duration="2s"
-      animateOnce
+    <Fade
+      direction="up"
+      triggerOnce
+      duration={1000}
       className="scrollContainer contact"
     >
       <div className="contact-sub-container">
@@ -32,7 +32,7 @@ const ContactComponent = () => (
           </button>
         </a>
       </div>
-    </ScrollAnimation>
+    </Fade>
     <div className="social-media-links">
       <ul className="link-item-container">
         <li className="link-li-item-container">

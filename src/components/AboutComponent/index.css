@@ -2,7 +2,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 100vh;
+  height: auto;
   background-color: #333b6e;
 }
 .about-sub-container {
@@ -148,4 +148,56 @@
 }
 .pointer {
   cursor: pointer;
+}
+
+.about-exp-img {
+  height: 100px;
+  filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.5));
+}
+.exp-card-details-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.exp-image-container {
+  display: flex;
+  justify-content: center;
+  border: solid 1px #333b6e;
+  padding: 50px;
+}
+.exp-card {
+  display: flex !important;
+  flex-direction: row !important;
+  align-items: center !important;
+  border: none;
+  background-color: transparent !important;
+  box-shadow: none !important;
+  width: 100% !important;
+  margin-left: 0px !important;
+  margin-right: 0px !important;
+  padding: 0px !important;
+}
+
+.exp-points {
+  list-style: none;
+  font-size: 60px !important;
+}
+.exp-content {
+  font-size: 18px !important;
+  font-weight: 100 !important;
+}
+.company-name{
+  list-style: none;
+  font-size: 30px !important;
+}
+.company{
+  font-size: 28px !important;
+  font-weight: 500 !important;
+  font-family: Arial, Helvetica, sans-serif !important;
+  /* color: #a09e9e;
+  text-shadow: 0 0 10px #cfcdcd;
+
+  text-shadow:
+    inset 2 2 2 #cfcccc,
+    0 0 1.2em rgba(243, 6, 6, 0.5); */
 }
