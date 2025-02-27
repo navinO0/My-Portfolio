@@ -128,9 +128,10 @@ const miniProjectObj = [
 const ProjectsComponents = () => (
   <div className="projects-main-container" id="Projects">
     <div className="projects-sub-container">
-      {/* <h1 className="section-heading project-heading">
-        Checkout my Recent projects
-      </h1> */}
+      <div className="about-me-heading-container project-heading">
+        <h1 className="section-heading">Relevant projects</h1>
+      </div>
+      <hr className="hr-styles" />
       <ul className="projects-ul-list-container">
         {projectsObject.map(projectItem => (
           <ProjectItem projectItem={projectItem} key={projectItem.id} />

@@ -30,9 +30,8 @@ const ListItem = styled.li`
   color: rgba(255, 255, 255, 0.64);
   list-style: none;
   margin: 20px;
-  font-size: 50px;
   filter: drop-shadow(2px 2px 3px rgba(0, 0, 0, 0.5));
-  transform: translateY(0px);
+  transform: translateY(79px);
   animation: float ${({duration}) => duration || '2s'} ease-in-out infinite;
   visibility: ${({disp}) => (disp ? 'hide' : 'block')};
   text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
@@ -73,7 +72,7 @@ const AboutComponent = () => (
         <div className="about-me-heading-container">
           <h1 className="section-heading">About Me</h1>
         </div>
-
+        <hr className="hr-styles hr-abt" />
         <div className="about-info-card-container">
           <p className="summery-content ">
             Hello! My name is Naveen, and I’m a Backend Developer with 2 years
@@ -103,17 +102,15 @@ const AboutComponent = () => (
                 'Node.js Development',
                 'RESTful API',
                 'API Design',
-                'SQL Database Management',
                 'SQL Databases',
                 'MongoDB (NoSQL)',
                 'Elasticsearch',
                 'Redis',
-                'Apache Kafka',
+                'Kafka',
                 'Data Security',
                 'Data Encryption',
                 'Technical Troubleshooting',
                 'Data Collation',
-                'PL/SQL',
                 'Query Optimization',
                 'Relational Databases',
                 'Software Debugging',
@@ -144,7 +141,7 @@ const AboutComponent = () => (
                   duration="1.3s"
                   className="fadeInDown header-links nav-link-item pointer"
                 >
-                  <AiFillHtml5 className="list-item-icon " />
+                  <AiFillHtml5 className="list-item " />
                   <p className="list-item-text">HTML</p>
                 </ListItem>
                 <ListItem duration="1.3s">
